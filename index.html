@@ -4,257 +4,219 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+<title>ROCHIT SINGH</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
 
 <style>
+
 *{
-    margin:0;
-    padding:0;
-    box-sizing:border-box;
-}
-
-html,
-body{
-    width:100%;
-    height:100%;
-    font-family:'Poppins',sans-serif;
-    background:linear-gradient(135deg,#0b6eb8,#18c13d);
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
 }
 
 body{
-    overflow-x:hidden;
+background:#0f172a;
+display:flex;
+justify-content:center;
+align-items:center;
+min-height:100vh;
+color:#fff;
 }
 
-/* Full Screen Container */
+/* CARD */
 
-.sio-main-container{
-    width:100%;
-    min-height:100vh;
-    display:flex;
-    justify-content:center;
-    align-items:center;
+.container{
+width:95%;
+max-width:420px;
+padding:30px 25px;
+border-radius:18px;
+
+background:rgba(255,255,255,0.05);
+backdrop-filter:blur(12px);
+
+border:1px solid rgba(255,255,255,0.08);
+
+box-shadow:0 20px 60px rgba(0,0,0,0.6);
+text-align:center;
 }
 
-/* Full Screen Card */
+/* LOGO */
 
-.sio-landing-wrap{
-    width:100%;
-    min-height:100vh;
-    background:#fff;
-    display:flex;
-    flex-direction:column;
-    justify-content:center;
-    align-items:center;
-    text-align:center;
-    padding:30px 20px;
+.logo{
+width:80px;
+height:80px;
+border-radius:50%;
+border:2px solid #FFD700;
+margin-bottom:12px;
 }
 
-/* Pulse Animation */
+/* TEXT */
 
-@keyframes pulse-blue{
-0%{box-shadow:0 0 0 0 rgba(11,110,184,.7);}
-70%{box-shadow:0 0 0 18px rgba(11,110,184,0);}
-100%{box-shadow:0 0 0 0 rgba(11,110,184,0);}
+h1{
+font-size:22px;
+color:#FFD700;
+margin-bottom:6px;
 }
 
-/* Button */
-
-.sio-btn{
-    width:100%;
-    max-width:350px;
-    background:linear-gradient(45deg,#0b6eb8,#0a8be0);
-    color:#fff;
-    text-decoration:none;
-    padding:16px;
-    font-size:17px;
-    font-weight:700;
-    border-radius:50px;
-    margin:18px 0;
-    animation:pulse-blue 2s infinite;
-    transition:.3s;
+h2{
+font-size:15px;
+opacity:0.9;
+margin-bottom:10px;
 }
 
-.sio-btn:hover{
-    transform:scale(1.05);
+.sub{
+font-size:13px;
+opacity:0.7;
+margin-bottom:18px;
 }
 
-/* Profile */
+/* BUTTON */
 
-.sio-profile{
-    margin:20px 0;
+.btn{
+display:block;
+text-decoration:none;
+background:#22c55e;
+color:#000;
+font-weight:700;
+padding:16px;
+border-radius:10px;
+margin:12px 0;
+transition:0.3s;
 }
 
-.sio-avatar{
-    width:120px;
-    height:120px;
-    margin:auto;
-    border-radius:50%;
-    overflow:hidden;
-    border:4px solid #fff;
-    box-shadow:0 8px 20px rgba(0,0,0,.2);
+.btn:hover{
+background:#16a34a;
+transform:scale(1.03);
 }
 
-.sio-avatar img{
-    width:100%;
-    height:100%;
-    object-fit:cover;
+/* TRUST BOX */
+
+.trust{
+background:rgba(0,255,150,0.08);
+padding:10px;
+border-radius:10px;
+font-size:13px;
+margin-bottom:15px;
+border:1px solid rgba(0,255,150,0.2);
 }
 
-.sio-headline{
-    margin-top:15px;
-    font-size:28px;
-    font-weight:800;
-    color:#18c13d;
+/* LIST */
+
+.points{
+list-style:none;
+font-size:14px;
+text-align:left;
+margin:15px 0;
 }
 
-/* Features */
-
-.sio-features{
-    margin-top:20px;
-    width:100%;
-    max-width:450px;
+.points li{
+margin:8px 0;
 }
 
-.sio-feature{
-    display:flex;
-    align-items:center;
-    justify-content:center;
-    gap:10px;
-    margin:12px 0;
+/* URGENCY */
+
+.timer{
+margin-top:10px;
+font-size:13px;
+color:#facc15;
 }
 
-.sio-tick{
-    width:28px;
-    height:28px;
-    border-radius:50%;
-    background:#eaf7ea;
-    color:#18c13d;
-    display:flex;
-    justify-content:center;
-    align-items:center;
-    font-weight:bold;
+/* SOCIAL PROOF */
+
+.proof{
+margin-top:12px;
+font-size:12px;
+opacity:0.7;
 }
 
-.sio-feature p{
-    color:#333;
-    font-weight:600;
-    font-size:16px;
+/* FOOTER BRAND */
+
+.footer{
+margin-top:20px;
+font-size:12px;
+opacity:0.6;
 }
 
-/* Highlight */
-
-.sio-highlight{
-    margin-top:20px;
-    background:#eef7ff;
-    color:#0b6eb8;
-    padding:12px;
-    border-radius:10px;
-    font-weight:700;
+.footer a{
+color:#38bdf8;
+text-decoration:none;
+font-weight:600;
 }
 
-/* Disclaimer */
-
-.sio-disclaimer{
-    margin-top:25px;
-    font-size:12px;
-    color:#666;
-    line-height:1.6;
-    max-width:450px;
+.footer a:hover{
+text-decoration:underline;
 }
 
-/* Mobile */
+/* RISK */
 
-@media(max-width:480px){
-
-.sio-headline{
-    font-size:24px;
+.risk{
+margin-top:10px;
+font-size:11px;
+opacity:0.5;
 }
 
-.sio-btn{
-    font-size:15px;
-}
-
-.sio-feature p{
-    font-size:14px;
-}
-
-}
 </style>
 </head>
 
 <body>
 
-<div class="sio-main-container">
+<div class="container">
 
-<div class="sio-landing-wrap">
+<img src="https://i.ibb.co/Lhb3DVXv/cropped-circle-image-4.png" class="logo">
 
-<a class="sio-btn" href="https://telegram.me/+11xjShQ2anU3NGQ9" target="_blank">
-🚀 JOIN TELEGRAM CHANNEL
+<h1>ROCHIT SINGH</h1>
+<h2>NIFTY • BANKNIFTY • OPTIONS</h2>
+
+<p class="sub">
+Daily Intraday Trading Signals & Analysis
+</p>
+
+<!-- TOP BUTTON -->
+<a href="https://t.me/+gWkJuXOGWwhmNjk1" class="btn">
+🚀 Get Today’s Signals Free
 </a>
 
-<div class="sio-profile">
-
-<div class="sio-avatar">
-<img src="https://i.ibb.co/KjrBVv9h/mr88-B4-MCQeolto-Xob-M9-JEe-Eyn-ZMn-Bj-FMz-Ac0-SMDAi-h-Ff1-Qg-RBAkl-Xo7yo-Kxe-N-POtqpyfq-Ow-Kv-VPc-Ao-I-I.jpg" alt="Profile">
+<div class="trust">
+✔ Trusted by 5,000+ Traders <br>
+✔ Daily Consistent Setups
 </div>
 
-<div class="sio-headline">
-Work From Home Handwriting Job
-</div>
+<ul class="points">
+<li>✔ 5–7 High Probability Trades</li>
+<li>✔ Exact Entry, SL & Target</li>
+<li>✔ Beginner Friendly Guidance</li>
+<li>✔ Live Market Updates</li>
+</ul>
 
-</div>
-
-<div class="sio-features">
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<p>Simple Writing Work – No Experience Needed</p>
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<p>Earn ₹15,000 – ₹30,000 Per Month</p>
-</div>
-
-<div class="sio-feature">
-<div class="sio-tick">✓</div>
-<p>Work From Home • Flexible Timing</p>
-</div>
-
-<div class="sio-highlight">
-🚀 Limited Seats Available – Apply Today!
-</div>
-
-</div>
-
-<a class="sio-btn" href="https://telegram.me/+11xjShQ2anU3NGQ9" target="_blank">
-🚀 JOIN TELEGRAM CHANNEL
+<!-- BOTTOM BUTTON -->
+<a href="https://t.me/+gWkJuXOGWwhmNjk1" class="btn">
+🚀 Join Free Telegram Channel
 </a>
 
-<div class="sio-disclaimer">
-<b style="color:#0a7a3a;">Note:</b><br>
-This is project-based work. Earnings depend on performance and submission quality.
+<div class="timer">
+⏳ Free Access Closing Soon
+</div>
+
+<div class="proof">
+📈 Limited Seats • Active Community
+</div>
+
+<p class="risk">
+⚠ Market investments are subject to risk
+</p>
+
+<!-- CLEAN FOOTER -->
+<div class="footer">
+Powered by 
+<a href="https://t.me/+zeknvpG-rJRiMDE1" target="_blank">
+AdVertex Agency
+</a>
 </div>
 
 </div>
 
-</div>
-<!-- Meta Pixel Code -->
-<script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '1344082391020185');
-fbq('track', 'PageView');
-</script>
-<noscript><img height="1" width="1" style="display:none"
-src="https://www.facebook.com/tr?id=1344082391020185&ev=PageView&noscript=1"
-/></noscript>
-<!-- End Meta Pixel Code -->
 </body>
 </html>
